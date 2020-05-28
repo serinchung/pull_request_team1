@@ -2,7 +2,7 @@
 
 int bubble_sort(int arr[], int n) {
     int i, j, temp;
-    for (i = 0; i < 9; i++) 
+    for (i = 0; i < 10; i++) 
         for (j = 0; j < n-i-1; j++) 
             if (arr[j] > arr[j+1]) {
                 temp = arr[j];
@@ -13,9 +13,9 @@ int bubble_sort(int arr[], int n) {
 }
 
 int main() {
-    int arr[9] = {0,1,3,7,2,5,4,6,8};
-    int arr_new = bubble_sort(arr, 9);
-    for (int i = 0; i < 9; i++)
+    int arr[10] = {0,1,3,7,2,5,4,6,8,9};
+    int arr_new = bubble_sort(arr, 10);
+    for (int i = 0; i < 10; i++)
         printf("%d ", arr_new+i);
 
     return 0;
